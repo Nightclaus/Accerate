@@ -193,7 +193,7 @@ export default function Home() {
               Skills
             </Link>
             <Link href="#platform" className="text-textColor/70 hover:text-textColor transition-colors">
-              Past Events
+              Events
             </Link>
             <Link href="#testimonials" className="text-textColor/70 hover:text-textColor transition-colors">
               Experience
@@ -201,7 +201,14 @@ export default function Home() {
             <Link href="#pricing" className="text-textColor/70 hover:text-textColor transition-colors">
               Home
             </Link>
+            <a
+              href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
             <Button className="bg-primary text-background hover:bg-primary/90 border-0">Sign Up</Button>
+            </a>
           </nav>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -222,7 +229,7 @@ export default function Home() {
                 Skills
               </Link>
               <Link href="#platform" className="text-textColor/70 hover:text-textColor transition-colors py-2">
-                Past Events
+                Events
               </Link>
               <Link href="#testimonials" className="text-textColor/70 hover:text-textColor transition-colors py-2">
                 Experience
@@ -230,7 +237,14 @@ export default function Home() {
               <Link href="#pricing" className="text-textColor/70 hover:text-textColor transition-colors py-2">
                 Home
               </Link>
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
               <Button className="bg-primary text-background hover:bg-primary/90 border-0 w-full">Sign Up</Button>
+              </a>
             </div>
           </motion.div>
         )}
@@ -273,10 +287,17 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6 border-0">
                 Sign Up
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </a>
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
                 FAQ
               </Button>
@@ -580,10 +601,17 @@ export default function Home() {
                       </div>
                     </div>
 
+                    <a
+                      href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
+                    >
                     <Button className="bg-primary text-background hover:bg-primary/90 border-0">
                       Sign Up
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
+                    </a>
                   </div>
 
                   <div className="relative">
@@ -889,10 +917,17 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
+              <a
+                href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6">
                 Sign Up
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              </a>
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
                 FAQ
               </Button>
