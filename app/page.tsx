@@ -38,7 +38,7 @@ export default function Home() {
 
   const gridOpacity = useTransform(smoothScrollYProgress, [0, 0.1, 0.2], [0.2, 0.15, 0.1])
 
-  const [stats, setStats] = useState({
+  const [stats, setStats] = useState({ // {stats.speed.toLocaleString()}
     deployments: 0,
     speed: 0,
     uptime: 0,
@@ -85,65 +85,65 @@ export default function Home() {
 
   const features = {
     speed: {
-      title: "Lightning Fast Performance",
+      title: "Rapid Prototyping",
       description:
-        "Our platform delivers sub-second load times and instant deployments, ensuring your users experience the fastest possible interaction with your product.",
+        "At Scrapyard Sydney, participants transform ideas into tangible projects within 48 hours, embracing the 'scrappy' spirit of innovation.",
       icon: <Zap className="h-8 w-8 text-primary" />,
-      stats: "300ms average page load",
-      image: "/placeholder.svg?height=400&width=600",
+      stats: "48-hour project turnaround",
+      image: "/scrapyard-sydney-rapid-prototyping.jpg",
     },
     scale: {
-      title: "Global Scale",
+      title: "Global Collaboration",
       description:
-        "Deploy to our global edge network spanning 35+ regions worldwide, bringing your application closer to users for reduced latency and improved performance.",
+        "Join a worldwide network of young innovators, with Scrapyard events held in over 100 cities, fostering a global exchange of ideas and solutions.",
       icon: <Globe className="h-8 w-8 text-primary" />,
-      stats: "35+ global regions",
-      image: "/placeholder.svg?height=400&width=600",
+      stats: "100+ cities worldwide",
+      image: "/scrapyard-global-collaboration.jpg",
     },
     security: {
-      title: "Enterprise-Grade Security",
+      title: "Empowering Future Innovators",
       description:
-        "Built-in DDoS protection, SSL encryption, and advanced security features keep your applications and data safe from threats and vulnerabilities.",
+        "Scrapyard Sydney provides a platform for high school students to explore technology, with support from industry leaders like Yubico, ensuring a secure and enriching experience.",
       icon: <Shield className="h-8 w-8 text-primary" />,
-      stats: "99.99% uptime guarantee",
-      image: "/placeholder.svg?height=400&width=600",
+      stats: "Supported by Yubico",
+      image: "/scrapyard-empowering-innovators.jpg",
     },
     developer: {
-      title: "Developer Experience",
+      title: "Hands-On Learning",
       description:
-        "Our intuitive platform streamlines your workflow with Git integration, preview deployments, and collaborative tools designed for modern development teams.",
+        "Whether you're building hardware or software, Scrapyard Sydney offers workshops and mentorship to help you create impactful projects from scratch.",
       icon: <Code className="h-8 w-8 text-primary" />,
-      stats: "50% faster development cycles",
-      image: "/placeholder.svg?height=400&width=600",
+      stats: "Beginner-friendly workshops",
+      image: "/scrapyard-hands-on-learning.jpg",
     },
-  }
+  };
 
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "CTO, TechVision",
+      name: "Dhyan Tanna",
+      role: "Organizer, Scrapyard Sydney",
       quote:
-        "Switching to this platform cut our deployment times by 80% and dramatically improved our team's productivity. The developer experience is unmatched.",
-      image: "/placeholder.svg?height=80&width=80",
-      logo: "/placeholder.svg?height=40&width=120",
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "Lead Engineer, DataFlow",
-      quote:
-        "The global edge network has been a game-changer for our international user base. We've seen significant improvements in load times across all regions.",
-      image: "/placeholder.svg?height=80&width=80",
-      logo: "/placeholder.svg?height=40&width=120",
+        "Scrapyard Sydney is all about fostering creativity and collaboration among young minds. It's inspiring to see high schoolers come together to solve real-world problems.",
+      image: "/dhyan-tanna.jpg",
+      logo: "/scrapyard-logo.jpg",
     },
     {
       name: "Aisha Patel",
-      role: "Founder, NextGen Solutions",
+      role: "Participant, Scrapyard Sydney 2025",
       quote:
-        "As a startup, we needed a platform that could scale with us without requiring a dedicated DevOps team. This solution exceeded our expectations.",
-      image: "/placeholder.svg?height=80&width=80",
-      logo: "/placeholder.svg?height=40&width=120",
+        "The hackathon was an incredible experience. I learned so much about hardware development and met amazing people who share my passion for technology.",
+      image: "/aisha-patel.jpg",
+      logo: "/scrapyard-logo.jpg",
     },
-  ]
+    {
+      name: "Michael Rodriguez",
+      role: "Mentor, Scrapyard Sydney 2025",
+      quote:
+        "Mentoring at Scrapyard Sydney was a rewarding experience. The enthusiasm and innovation of the participants were truly inspiring.",
+      image: "/michael-rodriguez.jpg",
+      logo: "/scrapyard-logo.jpg",
+    },
+  ];
 
   const calculateGradientPosition = () => {
     if (typeof window === "undefined") {
@@ -185,23 +185,23 @@ export default function Home() {
               <div className="absolute inset-0 bg-primary rounded-sm transform rotate-45"></div>
               <div className="absolute inset-0.5 bg-background rounded-sm transform rotate-45"></div>
             </div>
-            <span className="font-bold text-xl">Quantum</span>
+            <span className="font-bold text-xl">Accelrt</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="#features" className="text-textColor/70 hover:text-textColor transition-colors">
-              Features
+              Skills
             </Link>
             <Link href="#platform" className="text-textColor/70 hover:text-textColor transition-colors">
-              Platform
+              Past Events
             </Link>
             <Link href="#testimonials" className="text-textColor/70 hover:text-textColor transition-colors">
-              Testimonials
+              Experience
             </Link>
             <Link href="#pricing" className="text-textColor/70 hover:text-textColor transition-colors">
-              Pricing
+              Home
             </Link>
-            <Button className="bg-primary text-background hover:bg-primary/90 border-0">Get Started</Button>
+            <Button className="bg-primary text-background hover:bg-primary/90 border-0">Sign Up</Button>
           </nav>
 
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -219,18 +219,18 @@ export default function Home() {
           >
             <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
               <Link href="#features" className="text-textColor/70 hover:text-textColor transition-colors py-2">
-                Features
+                Skills
               </Link>
               <Link href="#platform" className="text-textColor/70 hover:text-textColor transition-colors py-2">
-                Platform
+                Past Events
               </Link>
               <Link href="#testimonials" className="text-textColor/70 hover:text-textColor transition-colors py-2">
-                Testimonials
+                Experience
               </Link>
               <Link href="#pricing" className="text-textColor/70 hover:text-textColor transition-colors py-2">
-                Pricing
+                Home
               </Link>
-              <Button className="bg-primary text-background hover:bg-primary/90 border-0 w-full">Get Started</Button>
+              <Button className="bg-primary text-background hover:bg-primary/90 border-0 w-full">Sign Up</Button>
             </div>
           </motion.div>
         )}
@@ -246,7 +246,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block mb-4 px-4 py-1 rounded-full bg-secondary/10 backdrop-blur-sm border border-secondary/20"
             >
-              <span className="text-sm font-medium">Introducing Quantum Platform v2.0</span>
+              <span className="text-sm font-medium">Introducing Accelrt Platform v2.0</span>
             </motion.div>
 
             <motion.h1
@@ -255,7 +255,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-primary"
             >
-              The Future of Web Development is Here
+              Welcome to Accelrt Development is here
             </motion.h1>
 
             <motion.p
@@ -264,7 +264,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-textColor/70 mb-8 max-w-2xl mx-auto"
             >
-              Build, deploy, and scale modern web applications with unprecedented speed and reliability.
+              We provide STEAM initiatives, You explore your potential
             </motion.p>
 
             <motion.div
@@ -274,11 +274,11 @@ export default function Home() {
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6 border-0">
-                Start Deploying
+                Sign Up
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
-                Book a Demo
+                FAQ
               </Button>
             </motion.div>
           </motion.div>
@@ -366,8 +366,8 @@ export default function Home() {
               className="relative p-8 rounded-xl border border-secondary/10 bg-gradient-to-br from-secondary/5 to-secondary/[0.02] backdrop-blur-sm"
             >
               <div className="absolute -top-3 -left-3 w-16 h-16 bg-primary/20 rounded-lg blur-xl" />
-              <h3 className="text-5xl font-bold mb-2">{stats.deployments.toLocaleString()}M+</h3>
-              <p className="text-textColor/70">Monthly Deployments</p>
+              <h3 className="text-5xl font-bold mb-2">153</h3>
+              <p className="text-textColor/70">Past Attendees</p>
             </motion.div>
 
             <motion.div
@@ -377,8 +377,8 @@ export default function Home() {
               className="relative p-8 rounded-xl border border-secondary/10 bg-gradient-to-br from-secondary/5 to-secondary/[0.02] backdrop-blur-sm"
             >
               <div className="absolute -top-3 -left-3 w-16 h-16 bg-accent/20 rounded-lg blur-xl" />
-              <h3 className="text-5xl font-bold mb-2">{stats.speed.toLocaleString()}ms</h3>
-              <p className="text-textColor/70">Average Page Load</p>
+              <h3 className="text-5xl font-bold mb-2">85% 👍 </h3>
+              <p className="text-textColor/70">Overall Reception</p>
             </motion.div>
 
             <motion.div
@@ -389,7 +389,7 @@ export default function Home() {
             >
               <div className="absolute -top-3 -left-3 w-16 h-16 bg-primary/20 rounded-lg blur-xl" />
               <h3 className="text-5xl font-bold mb-2">{stats.uptime.toFixed(2)}%</h3>
-              <p className="text-textColor/70">Uptime Guarantee</p>
+              <p className="text-textColor/70">Value for time</p>
             </motion.div>
           </div>
         </div>
@@ -405,10 +405,10 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              Powerful Features for Modern Development
+              Get the skills you need
             </h2>
             <p className="text-textColor/70 text-lg">
-              Our platform provides everything you need to build, deploy, and scale your applications with confidence.
+              Our platform provides everything you need develop applications and experiences with confidence.
             </p>
           </motion.div>
 
@@ -452,7 +452,7 @@ export default function Home() {
                   <p className="font-medium">{features[activeFeature].stats}</p>
                 </div>
                 <Button className="bg-primary text-background hover:bg-primary/90 border-0">
-                  Explore Feature
+                  Explore Past Projects
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
@@ -483,10 +483,10 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              One Platform, Endless Possibilities
+              Explore our Hackathons
             </h2>
             <p className="text-textColor/70 text-lg">
-              Our comprehensive platform provides everything you need to build, deploy, and scale your applications.
+              Join us at Scrapyard Sydney, a dynamic in-person hackathon event where creativity meets collaboration to build innovative projects in a high-energy environment.
             </p>
           </motion.div>
 
@@ -516,9 +516,9 @@ export default function Home() {
                   className="grid md:grid-cols-2 gap-12 items-center"
                 >
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Deploy with Confidence</h3>
+                    <h3 className="text-2xl font-bold mb-4">Learn Github Skills</h3>
                     <p className="text-textColor/70 mb-6">
-                      Push to your Git repository and we'll automatically build, deploy, and scale your application. Our
+                      Learn how git works and collaborate Git repository and we'll guide you through deployment process to make your apps accessible by everyone. Our
                       platform handles the infrastructure so you can focus on your code.
                     </p>
 
@@ -536,9 +536,9 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Git Integration</h4>
+                          <h4 className="font-medium">Review Code</h4>
                           <p className="text-sm text-textColor/60">
-                            Connect your GitHub, GitLab, or Bitbucket repository
+                            We will help you express your ideas
                           </p>
                         </div>
                       </div>
@@ -556,8 +556,8 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Preview Deployments</h4>
-                          <p className="text-sm text-textColor/60">Every pull request gets its own preview URL</p>
+                          <h4 className="font-medium">Git Integration</h4>
+                          <p className="text-sm text-textColor/60">Connect your GitHub, GitLab, or Bitbucket repository</p>
                         </div>
                       </div>
 
@@ -574,14 +574,14 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Global CDN</h4>
-                          <p className="text-sm text-textColor/60">Automatic edge caching in 35+ regions worldwide</p>
+                          <h4 className="font-medium">Deployment</h4>
+                          <p className="text-sm text-textColor/60">Guides for Vercel, Netify, and Github pages</p>
                         </div>
                       </div>
                     </div>
 
                     <Button className="bg-primary text-background hover:bg-primary/90 border-0">
-                      Start Deploying
+                      Sign Up
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </div>
@@ -609,10 +609,9 @@ export default function Home() {
                   className="grid md:grid-cols-2 gap-12 items-center"
                 >
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Real-time Monitoring</h3>
+                    <h3 className="text-2xl font-bold mb-4">Learning Real Skils</h3>
                     <p className="text-textColor/70 mb-6">
-                      Get comprehensive insights into your application's performance with real-time analytics, logs, and
-                      alerts. Identify and resolve issues before they impact your users.
+                        Participate in hands-on workshops led by industry experts designed to sharpen your technical abilities, introduce you to new tools, and help you develop practical skills that you can apply beyond the hackathon.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -629,9 +628,9 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Performance Analytics</h4>
+                          <h4 className="font-medium">Choose your workshops</h4>
                           <p className="text-sm text-textColor/60">
-                            Track page load times, API response times, and more
+                            Pick the skills you want to learn
                           </p>
                         </div>
                       </div>
@@ -649,8 +648,8 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Error Tracking</h4>
-                          <p className="text-sm text-textColor/60">Automatically capture and analyze runtime errors</p>
+                          <h4 className="font-medium">Participate</h4>
+                          <p className="text-sm text-textColor/60">Actively develop you skills via the guidance of experienced mentors</p>
                         </div>
                       </div>
 
@@ -667,16 +666,16 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Custom Alerts</h4>
+                          <h4 className="font-medium">Apply your Skills</h4>
                           <p className="text-sm text-textColor/60">
-                            Set up notifications for critical events and thresholds
+                            Use your project time to apply your knowledge to thing you want to build
                           </p>
                         </div>
                       </div>
                     </div>
 
                     <Button className="bg-accent text-background hover:bg-accent/90 border-0">
-                      Explore Monitoring
+                      View past workshops
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </div>
@@ -706,8 +705,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Team Collaboration</h3>
                     <p className="text-textColor/70 mb-6">
-                      Streamline your team's workflow with built-in collaboration tools. Manage access controls, share
-                      preview links, and coordinate deployments across your organization.
+                      Connect and collaborate with fellow participants you meet on the day. Form dynamic teams, share ideas, and combine your unique skills to build innovative projects together.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -724,8 +722,8 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Team Management</h4>
-                          <p className="text-sm text-textColor/60">Organize team members and manage permissions</p>
+                          <h4 className="font-medium">Find like-minded teammates</h4>
+                          <p className="text-sm text-textColor/60">Meet new people at Scrapyard</p>
                         </div>
                       </div>
 
@@ -742,8 +740,8 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Comments & Feedback</h4>
-                          <p className="text-sm text-textColor/60">Leave feedback directly on preview deployments</p>
+                          <h4 className="font-medium">Start Creating</h4>
+                          <p className="text-sm text-textColor/60">Select a project idea and owrk as a team to achieve it</p>
                         </div>
                       </div>
 
@@ -760,16 +758,16 @@ export default function Home() {
                           </svg>
                         </div>
                         <div>
-                          <h4 className="font-medium">Audit Logs</h4>
+                          <h4 className="font-medium">Deploy and Share</h4>
                           <p className="text-sm text-textColor/60">
-                            Track all changes and deployments across your team
+                            Share your software or hardware application to win prizes
                           </p>
                         </div>
                       </div>
                     </div>
 
                     <Button className="bg-primary text-background hover:bg-primary/90 border-0">
-                      Enable Collaboration
+                      View Past Projects
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </div>
@@ -805,10 +803,10 @@ export default function Home() {
             className="text-center max-w-3xl mx-auto mb-16"
           >
             <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-              Trusted by Innovative Teams
+              We Support Innovative Teams
             </h2>
             <p className="text-textColor/70 text-lg">
-              See what our customers have to say about their experience with our platform.
+              See what our past participants have to say about their experience with our platform.
             </p>
           </motion.div>
 
@@ -873,7 +871,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="text-3xl md:text-5xl font-bold mb-6"
             >
-              Ready to Transform Your Development Workflow?
+              Ready to get started?
             </motion.h2>
 
             <motion.p
@@ -882,7 +880,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-xl text-textColor/70 mb-8"
             >
-              Join thousands of developers and companies who have already made the switch.
+              Join hundreds of like minded individuals and make something impactful
             </motion.p>
 
             <motion.div
@@ -892,11 +890,11 @@ export default function Home() {
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6">
-                Start for Free
+                Sign Up
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
-                Contact Sales
+                FAQ
               </Button>
             </motion.div>
           </div>
@@ -936,7 +934,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-primary rounded-sm transform rotate-45"></div>
                   <div className="absolute inset-0.5 bg-background rounded-sm transform rotate-45"></div>
                 </div>
-                <span className="font-bold text-xl">Quantum</span>
+                <span className="font-bold text-xl">Accelrt</span>
               </Link>
               <p className="text-textColor/60 mb-6">
                 Building the future of web development with cutting-edge tools and infrastructure.
@@ -1073,7 +1071,7 @@ export default function Home() {
 
           <div className="border-t border-secondary/10 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-textColor/40 text-sm">
-              &copy; {new Date().getFullYear()} Quantum Platform. All rights reserved.
+              &copy; {new Date().getFullYear()} Accelrt Platform. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-textColor/40 hover:text-textColor transition-colors text-sm">
