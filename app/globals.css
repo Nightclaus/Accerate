@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 100% 0.3%;
+    --foreground: 187 54% 56%;
+
+    --card: 240 100% 3%;
+    --card-foreground: 187 54% 56%;
+
+    --popover: 240 100% 3%;
+    --popover-foreground: 187 54% 56%;
+
+    --primary: 164 98% 65%;
+    --primary-foreground: 240 100% 0.3%;
+
+    --secondary: 210 16% 88%;
+    --secondary-foreground: 240 100% 0.3%;
+
+    --muted: 240 100% 10%;
+    --muted-foreground: 187 54% 56%;
+
+    --accent: 213 99% 67%;
+    --accent-foreground: 240 100% 0.3%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 240 100% 0.3%;
+
+    --border: 210 16% 88%;
+    --input: 210 16% 88%;
+    --ring: 164 98% 65%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(15px);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
