@@ -291,7 +291,7 @@ export default function Home() {
                 href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-background hover:bg-primary/90 text-lg px-8 py-6 border-0"
+                className="text-background text-lg px-8 py-6 border-0"
               >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6 border-0">
                 Sign Up
@@ -302,7 +302,7 @@ export default function Home() {
                 href="https://docs.google.com/document/d/e/2PACX-1vQ73w2nkn0c_fRw6D8APzHfaxkgziWoHO3GKK1rsb4v55Gn7cDS395VYwGEgzQJR0KMMWMG2jMmkBi8/pub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10"
+                className="text-lg px-8 py-6 border-secondary/20"
               >
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
                 FAQ
@@ -928,7 +928,7 @@ export default function Home() {
                 href="https://docs.google.com/document/d/e/2PACX-1vT0Az-qRC0CQTj1-VgrA-IW8wecHqU_ofC9Mus_V1mHwsddm1FKzk4FJkWXeWxIwBzk2gX-oIAHi85Q/pub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-background hover:bg-primary/90 text-lg px-8 py-6"
+                className="text-background text-lg px-8 py-6"
               >
               <Button className="bg-primary text-background hover:bg-primary/90 text-lg px-8 py-6">
                 Sign Up
@@ -939,7 +939,7 @@ export default function Home() {
                 href="https://docs.google.com/document/d/e/2PACX-1vQ73w2nkn0c_fRw6D8APzHfaxkgziWoHO3GKK1rsb4v55Gn7cDS395VYwGEgzQJR0KMMWMG2jMmkBi8/pub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10"
+                className="text-lg px-8 py-6 border-secondary/20"
               >
               <Button variant="outline" className="text-lg px-8 py-6 border-secondary/20 hover:bg-secondary/10">
                 FAQ
